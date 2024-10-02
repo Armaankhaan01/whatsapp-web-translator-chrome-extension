@@ -19,7 +19,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 // Function to be injected into WhatsApp Web page
 function translateAllMessages(targetLang) {
   const messageElements = document.querySelectorAll(
-    ".selectable-text.copyable-text"
+    "._ao3e.selectable-text.copyable-text"
   );
 
   messageElements.forEach((messageElement) => {
@@ -43,17 +43,3 @@ function translateAllMessages(targetLang) {
       .catch((error) => console.error("Translation error:", error));
   });
 }
-
-let selectedLanguage;
-
-chrome.storage.sync.get(["language"], function (result) {
-  if (result.language) {
-    selectedLanguage = result.language;
-    console.log("Current stored language is " + result.language);
-  }
-});
-
-chrome.runtime.sendMessage({
-  action: "translateAllMessages",
-  targetLang: selectedLanguage,
-});

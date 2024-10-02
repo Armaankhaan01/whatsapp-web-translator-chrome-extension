@@ -3,68 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Popup</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 80px;
+        background-color: #f4f4f9;
+        color: #333;
+        width: 200px;
+      }
+
+      h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        color: #4a4a4a;
+      }
+
+      select {
+        width: 100%;
+
+        margin-bottom: 20px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      select:focus {
+        outline: none;
+        border-color: #8e36eb;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        background-color: #8e36eb;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #732cc4;
+      }
+
+      button:active {
+        background-color: #5c23a1;
+      }
+
+      button:focus {
+        outline: none;
+      }
+
+      /* Mobile responsiveness */
+      @media (max-width: 600px) {
+        body {
+          padding: 10px;
+        }
+
+        h3 {
+          font-size: 18px;
+        }
+
+        select,
+        button {
+          font-size: 14px;
+        }
+      }
+    </style>
+    <title>Translate Popup</title>
   </head>
+
   <body>
-    <h1>Hello World!</h1>
-    <a href="options.html" target="_blank">Go to Options</a>
-    <!-- Link to options.html -->
-     
+    <h3>Select Target Language</h3>
+    <select id="languageSelector">
+      <option value="sq">Albanian</option>
+      <option value="ar">Arabic</option>
+      <option value="az">Azerbaijani</option>
+      <option value="bn">Bengali</option>
+      <option value="bg">Bulgarian</option>
+      <option value="ca">Catalan</option>
+      <option value="zh">Chinese</option>
+      <option value="zt">Chinese (Traditional)</option>
+      <option value="cs">Czech</option>
+      <option value="da">Danish</option>
+      <option value="nl">Dutch</option>
+      <option value="en" selected>English</option>
+      <option value="eo">Esperanto</option>
+      <option value="et">Estonian</option>
+      <option value="fi">Finnish</option>
+      <option value="fr">French</option>
+      <option value="de">German</option>
+      <option value="el">Greek</option>
+      <option value="he">Hebrew</option>
+      <option value="hi">Hindi</option>
+      <option value="hu">Hungarian</option>
+      <option value="id">Indonesian</option>
+      <option value="ga">Irish</option>
+      <option value="it">Italian</option>
+      <option value="ja">Japanese</option>
+      <option value="ko">Korean</option>
+      <option value="lv">Latvian</option>
+      <option value="lt">Lithuanian</option>
+      <option value="ms">Malay</option>
+      <option value="nb">Norwegian</option>
+      <option value="fa">Persian</option>
+      <option value="pl">Polish</option>
+      <option value="pt">Portuguese</option>
+      <option value="ro">Romanian</option>
+      <option value="ru">Russian</option>
+      <option value="sr">Serbian</option>
+      <option value="sk">Slovak</option>
+      <option value="sl">Slovenian</option>
+      <option value="es">Spanish</option>
+      <option value="sv">Swedish</option>
+      <option value="tl">Tagalog</option>
+      <option value="th">Thai</option>
+      <option value="tr">Turkish</option>
+      <option value="uk">Ukrainian</option>
+      <option value="ur">Urdu</option>
+      <option value="vi">Vietnamese</option>
+    </select>
+    <button id="translateButton">Translate Messages</button>
+
+    <script src="popup.js"></script>
   </body>
 </html>
-<div class="_aigv _aigz">
-  <div class="_al_c">
-    <div class="_al_d">
-      <div class="_al_n" style="opacity: 1">
-        <img
-          width="320"
-          alt=""
-          src="https://static.whatsapp.net/rsrc.php/v3/y6/r/wa669aeJeom.png"
-        />
-      </div>
-      <div class="_al_i" style="opacity: 1">
-        <h1 class="_al_e">Download WhatsApp for Windows</h1>
-        <div class="xqui205 x1f6kntn x16h55sf x1fcty0u x1rw0npd">
-          Make calls, share your screen and get a faster experience when you
-          download the Windows app.
-        </div>
-        <div class="_al_t">
-          <button
-            class="x889kno x1a8lsjc xbbxn1n xxbr6pl x1n2onr6 x1rg5ohu xk50ysn x1f6kntn xyesn5m x1z11no5 xjy5m1g x1mnwbp6 x4pb5v6 x178xt8z xm81vs4 xso031l xy80clv x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x1v8p93f xogb00i x16stqrj x1ftr3km x1hl8ikr xfagghw x9dyr19 x9lcvmn xbtce8p x14v0smp xo8ufso xcjl5na x1k3x3db xuxw1ft xv52azi"
-          >
-            <div
-              class="x1c4vz4f xs83m0k xdl72j9 x1g77sc7 x78zum5 xozqiw3 x1oa3qoh x12fk4p8 xeuugli x2lwn1j xl56j7k x1q0g3np x6s0dn4"
-            >
-              <div
-                class="x1c4vz4f xs83m0k xdl72j9 x1g77sc7 x78zum5 xozqiw3 x1oa3qoh x12fk4p8 x3pnbk8 xfex06f xeuugli x2lwn1j xl56j7k x1q0g3np x6s0dn4"
-                gap="8"
-                style="flex-grow: 1"
-              >
-                Get from Microsoft Store
-              </div>
-            </div>
-          </button>
-        </div>
-      </div>
-      <div class="_al_x">
-        <span aria-hidden="true" data-icon="lock-small" class=""
-          ><svg
-            viewBox="0 0 10 12"
-            height="12"
-            width="10"
-            preserveAspectRatio="xMidYMid meet"
-            class=""
-            version="1.1"
-          >
-            <title>lock-small</title>
-            <path
-              d="M5.00847986,1.6 C6.38255462,1.6 7.50937014,2.67435859 7.5940156,4.02703389 L7.59911976,4.1906399 L7.599,5.462 L7.75719976,5.46214385 C8.34167974,5.46214385 8.81591972,5.94158383 8.81591972,6.53126381 L8.81591972,9.8834238 C8.81591972,10.4731038 8.34167974,10.9525438 7.75719976,10.9525438 L2.25767996,10.9525438 C1.67527998,10.9525438 1.2,10.4731038 1.2,9.8834238 L1.2,6.53126381 C1.2,5.94158383 1.67423998,5.46214385 2.25767996,5.46214385 L2.416,5.462 L2.41679995,4.1906399 C2.41679995,2.81636129 3.49135449,1.68973395 4.84478101,1.60510326 L5.00847986,1.6 Z M5.00847986,2.84799995 C4.31163824,2.84799995 3.73624912,3.38200845 3.6709675,4.06160439 L3.6647999,4.1906399 L3.663,5.462 L6.35,5.462 L6.35111981,4.1906399 C6.35111981,3.53817142 5.88169076,2.99180999 5.26310845,2.87228506 L5.13749818,2.85416626 L5.00847986,2.84799995 Z"
-              fill="currentColor"
-            ></path></svg
-        ></span>
-        Your personal messages are end-to-end encrypted
-      </div>
-    </div>
-  </div>
-
-</div>
